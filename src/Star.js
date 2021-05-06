@@ -5,14 +5,6 @@ const Star = (props) => {
 	const [selected, setSelected] = useState(props.selected);
 	const [showTooltip, setShowTooltip] = useState(false);
 
-	// componentDidUpdate(PrevProps) {
-	//     const { selected } = this.props;
-	//     if (selected !== PrevProps.selected) {
-	//         this.setState({
-	//             selected: selected
-	//         })
-	//     }
-	// }
 	useEffect(() => {
 		const { selected: prevSelected } = props;
 		if (prevSelected !== selected) {
